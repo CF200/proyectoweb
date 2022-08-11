@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="css/nosotros.css">
+    
+   
+    <!-- CSS only BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    
+</head>
+<body class="bodycss">
+    
+    
+
+    
+
+    <!--HEADER y menu responsive-->
+    <nav class=" sticky-top" >
+        
+
+      <div class="nav-uno">
+        <div class="header" id="header">
+            <div class="container">
+                <div class="menu1 p-2">
+                    <div class="menu-icon">
+                        <div class="fs-3">ALTERPET</div>
+                    </div>
+                    
+                    <!--BUSCADOR EN PANTALLA GRANDE-->
+                    <div class="buscador">
+                        <input type="text" name="barrabuscar" placeholder="Buscar" class="barrab" autocomplete="off">
+                        <button id='search-button' type='submit'><i class="bi bi-search"></i></button>
+                    </div>
+                
+
+                    <div class="user-carro1 ">
+                        <div class="usuario ">
+                        <p class="m-0 p-0">Mi Cuenta</p>
+                        <i class="bi bi-person-fill user1 fs-2  m-0 p-0"></i>
+                        <div class="cuentas">
+                            <div onclick="location.href='login.html';">Iniciar Sesión</div>
+                            <div onclick="location.href='registro.html';">Crear una cuenta</div>
+                        </div>
+                        </div>
+
+                    
+                        <i class="bi bi-cart-fill carro1 fs-2  m-0 p-0" id="CARRITOCOMPRA"></i>
+                    </div>
+                </div>
+                <!--CONTENEDOR CARRITO COMPRAS AQUI YA QUE OBEDECE A OTRO RELATIVE-->
+                <div class="LATERAL-CARRITO-VENTANA" id="LATERALcarrito">
+                    <div class="Fondo-lateral-carrito-blanco" id="Fondo-lateral-carrito-blanco"></div>
+                    <div class="carrito-ventana" id="carrito-ventana">
+                    <div class="cabecera">
+                        <div class="Titulo-e-icono">
+                        <i class="bi bi-x-lg" id="CERRAR2"></i>
+                        <div class="fs-5">Carrito de compras</div>
+                        </div>
+                        <div class="icono-carrito-lateral fs-2">
+                        <i class="bi bi-cart"></i>
+                        <div class="circulo"><div class="fs-6">0</div></div>
+                        </div>
+                    </div>
+
+                    <div class="carrito-ventana-contenido">
+                        <div>Su carrito está actualmente vacío</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <!--FIN-->
+        </div>
+        <div class="MENU-CONTENEDOR" id="MENU-CONTENEDOR">
+            <div class="container">
+                <div class="menu">
+                    <div class="derecha">
+                        <div class="item-derecha" onclick="location.href='index.html';"><a class="ida" href="index.html">Inicio</a></div>
+                        <div class="item-derecha perro">
+                            <a class="ida perro" href="">Perro</a>
+                            <div class="contenedor-menu-perro">
+                              <div class="menup">
+                                <div class="c c1">
+                                    <div class="contenedorMenuP-categoria">
+                                            <div class="titulo">Alimento</div>
+                                            <div class="contenido"><a class="dentro-de-contenido" href="PerroAlimentoSeco.html">Alimento Seco</a></div>
+                                            <div class="contenido"><a class="dentro-de-contenido" href="PerroAlimentoHumedo.html">Alimento Húmedo</a></div>
+                                            <div class="contenido"><a class="dentro-de-contenido" href="PerroAlimentoSaludable.html">Alimento Saludable</a></div>
+                                            <div class="contenido"><a class="dentro-de-contenido" href="PerroAlimentoSnacks.html">Snacks</a></div>
+                                    </div>
+                                    <div class="contenedorMenuP-categoria">
+                                      <div class="titulo">Transporte,paseo y viaje</div>
+                                      <div class="contenido"><a class="dentro-de-contenido" href="PerroTransportadores.html">Transportadores</a></div>
+                                      <div class="contenido"><a class="dentro-de-contenido" href="PerroBolsos.html">Bolsos paseadores</a></div>
+                                      <div class="contenido"><a class="dentro-de-contenido" href="PerroArneses.html">Arneses y correas</a></div>
+                                      <div class="contenido"><a class="dentro-de-contenido" href="PerroCorreas.html">Correas</a></div>
+                                    </div>
+                                </div>
+                                <div class="c c2">
+                                    <div class="contenedorMenuP-categoria">
+                                      <div class="titulo">Artículos para el hogar</div>
+                                      <div class="contenido"><a class="dentro-de-contenido" href="PerroHogarCamas.html">Camas</a></div>
+                                      <div class="contenido"><a class="dentro-de-contenido" href="PerroHogarJuguetes.html">Juguetes</a></div>
+                                      <div class="contenido"><a class="dentro-de-contenido" href="PerroHogarPlatos.html">Platos y bebederos</a></div>
+                                      <div class="contenido"><a class="dentro-de-contenido" href="PerroHogarCasas.html">Casas</a></div>
+                                    </div>
+                                    <div class="contenedorMenuP-categoria">
+                                      <div class="titulo">Higiene y limpeza</div>
+                                      <div class="contenido"><a class="dentro-de-contenido" href="PerroHigieneBaño.html">Artículos de baño perro</a></div>
+                                      <div class="contenido"><a class="dentro-de-contenido" href="PerroHigieneHogar.html">Artículos para el hogar</a></div>
+                                      <div class="contenido"><a class="dentro-de-contenido" href="PerroHigienePerfumes.html">Perfumes</a></div>
+                                      <div class="contenido"><a class="dentro-de-contenido" href="PerroHigieneLimpieza.html">Limpieza Dental</a></div>
+                                    </div>
+                                </div>
+                                <div class="c c3">
+                        
+                                    <div class="contenedorMenuP-categoria">
+                                      <div class="titulo">Lactantes</div>
+                                      <div class="contenido"><a class="dentro-de-contenido" href="PerroLactanteB.html">Biberones</a></div>
+                                      <div class="contenido"><a class="dentro-de-contenido" href="PerroLactanteF.html">Fórmula Láctea</a></div>
+                                    </div>
+                                    <div class="contenedorMenuP-categoria">
+                                      <div class="titulo">Salud</div>
+                                      <div class="contenido"><a class="dentro-de-contenido" href="PerroSaludAntiparasitarios.html">Antiparasitarios</a></div>
+                                      <div class="contenido"><a class="dentro-de-contenido" href="PerroSaludDermatologicos.html">Dermatológicos</a></div>
+                                      <div class="contenido"><a class="dentro-de-contenido" href="PerroSaludConos.html">Conos y fajas</a></div>
+                                      <div class="contenido"><a class="dentro-de-contenido" href="PerroSaludAnalgesicos.html">Analgésicos</a></div>
+                                      <div class="contenido"><a class="dentro-de-contenido" href="PerroSaludVyS.html">Vitaminas y Suplementos</a></div>
+                                    </div>
+                                </div>
+                                
+                              </div>
+                                <div class="imagen"><img src="https://i.pinimg.com/564x/0c/3f/cb/0c3fcb62238a6c58c11d912adc433a96.jpg" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="item-derecha gato">
+                          <a class="ida gato" href="">Gato</a>
+                          <div class="contenedor-menu-perro">
+                            <div class="menup">
+                              <div class="c c1">
+                                <div class="contenedorMenuP-categoria">
+                                        <div class="titulo">Alimento</div>
+                                        <div class="contenido"><a class="dentro-de-contenido" href="GatoAlimentoSeco.html">Alimento Seco</a></div>
+                                        <div class="contenido"><a class="dentro-de-contenido" href="GatoAlimentoHumedo.html">Alimento Húmedo</a></div>
+                                        <div class="contenido"><a class="dentro-de-contenido" href="GatoAlimentoSaludable.html">Alimento Saludable</a></div>
+                                        <div class="contenido"><a class="dentro-de-contenido" href="GatoAlimentoSnacks.html">Snacks</a></div>
+                                </div>
+                                <div class="contenedorMenuP-categoria">
+                                  <div class="titulo">Transporte,paseo y viaje</div>
+                                  <div class="contenido"><a class="dentro-de-contenido" href="GatoTransportadores.html">Transportadores</a></div>
+                                  <div class="contenido"><a class="dentro-de-contenido" href="GatoBolsos.html">Bolsos paseadores</a></div>
+                                  <div class="contenido"><a class="dentro-de-contenido" href="GatoArneses.html">Arneses y correas</a></div>
+                                  <div class="contenido"><a class="dentro-de-contenido" href="GatoCorreas.html">Correas</a></div>
+                                </div>
+                            </div>
+                            <div class="c c2">
+                                <div class="contenedorMenuP-categoria">
+                                  <div class="titulo">Artículos para el hogar</div>
+                                  <div class="contenido"><a class="dentro-de-contenido" href="GatoHogarCamas.html">Camas</a></div>
+                                  <div class="contenido"><a class="dentro-de-contenido" href="GatoHogarJuguetes.html">Juguetes</a></div>
+                                  <div class="contenido"><a class="dentro-de-contenido" href="GatoHogarPlatos.html">Platos y bebederos</a></div>
+                                  <div class="contenido"><a class="dentro-de-contenido" href="GatoHogarCasas.html">Rascadores</a></div>
+                                  <div class="contenido"><a class="dentro-de-contenido" href="GatoHogarVestimenta.html">Vestimenta</a></div>
+                                </div>
+                                <div class="contenedorMenuP-categoria">
+                                  <div class="titulo">Higiene y limpeza</div>
+                                  <div class="contenido"><a class="dentro-de-contenido" href="GatoHigieneArena.html">Arena</a></div>
+                                  <div class="contenido"><a class="dentro-de-contenido" href="GatoHigieneAreneros.html">Areneros</a></div>
+                                  <div class="contenido"><a class="dentro-de-contenido" href="GatoHigieneBaño.html">Artículos de baño gato</a></div>
+                                  <div class="contenido"><a class="dentro-de-contenido" href="GatoHigieneHogar.html">Artículos para el hogar</a></div>
+                                  <div class="contenido"><a class="dentro-de-contenido" href="GatoHigienePeines.html">Peines</a></div>
+      
+                                </div>
+                            </div>
+                            <div class="c c3">
+                    
+                                <div class="contenedorMenuP-categoria">
+                                  <div class="titulo">Lactantes</div>
+                                  <div class="contenido"><a class="dentro-de-contenido" href="GatoLactanteB.html">Biberones</a></div>
+                                  <div class="contenido"><a class="dentro-de-contenido" href="GatoLactanteF.html">Fórmula Láctea</a></div>
+                                </div>
+                                <div class="contenedorMenuP-categoria">
+                                  <div class="titulo">Salud</div>
+                                  <div class="contenido"><a class="dentro-de-contenido" href="GatoSaludAntiparasitarios.html">Antiparasitarios</a></div>
+                                  <div class="contenido"><a class="dentro-de-contenido" href="GatoSaludDermatologicos.html">Dermatológicos</a></div>
+                                  <div class="contenido"><a class="dentro-de-contenido" href="GatoSaludConos.html">Conos y fajas</a></div>
+                                  <div class="contenido"><a class="dentro-de-contenido" href="GatoSaludAnalgesicos.html">Analgésicos</a></div>
+                                  <div class="contenido"><a class="dentro-de-contenido" href="GatoSaludVyS.html">Vitaminas y Suplementos</a></div>
+                                </div>
+                            </div>
+                              
+                            </div>
+                            <div class="imagen"><img src="http://www.mpets.eu/Cached/1612/piece/650x640/catcollar.jpg" alt=""></div>
+                          </div>
+                        </div>
+                        <div class="item-derecha"><a class="ida" href="">blog</a></div>
+                        <div class="item-derecha"><a class="ida" href="nosotros.html">Nosotros</a></div>
+                    </div>
+                    <div class="izquierda">
+                        <div class="item-izquierda"><a class="ida" href="preguntas.html">Soporte</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      
+
+
+
+
+
+
+
+       
+
+      <div class="nav-dos" id="MenuresponsiveRR">
+        
+          <div class="menu-responsive d-flex flex-wrap p-2">
+
+              <div class="menu2 d-flex justify-content-between w-100 m-0 p-0">
+                  <div class="menu-icon m-0 p-0 fs-4">
+
+                      <div class="Hamburguesa2 oculto" id="HAMBURGUESA-celularRR">
+                          <i class="bi bi-list fs-3 hamburguesa-icono-menu" id="icono-menu"></i>
+                      </div>
+                      
+                      <div>ALTERPET</div>
+                  </div>
+                  
+                
+                  <!--BUSCADOR EN PANTALLA PEQUEÑA-->
+                  <form class="d-flex d-none d-sm-block d-md-none FORMULARIO-BUSCAR m-0 p-0">
+                      <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  </form>
+
+                  <div class="user-carro2 m-0 p-0">
+                    <!--<div class="user-responsive"><i class="bi bi-chevron-down flecha-hacia-abajo-responsive"></i> <i class="bi bi-person-fill usercelular fs-3"></i></div>-->
+                     
+                      <i class="bi bi-cart-fill carro1celular fs-3" id="CARRITOCOMPRA2"></i>
+                  </div>
+              </div>
+
+
+              <!--BUSCADOR EN PANTALLA MUY PEQUEÑA-->
+              <form class="d-flex d-block d-sm-none w-100 FORMULARIO-BUSCAR mt-1">
+                  <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
+              </form>
+
+                <!--CONTENEDOR CARRITO COMPRAS AQUI YA QUE OBEDECE A OTRO RELATIVE-->
+              <div class="LATERAL-CARRITO-VENTANA2" id="LATERALcarrito2">
+                <div class="Fondo-lateral-carrito-blanco2" id="Fondo-lateral-carrito-blanco2"></div>
+                <div class="carrito-ventana2" id="carrito-ventana2">
+                  <div class="cabecera2">
+                    <div class="Titulo-e-icono2">
+                      <i class="bi bi-x-lg" id="CERRAR3resp"></i>
+                      <div class="fs-5">Carrito de compras</div>
+                    </div>
+                     <div class="icono-carrito-lateral2 fs-2">
+                       <i class="bi bi-cart"></i>
+                       <div class="circulo2"><div class="fs-6">0</div></div>
+                     </div>
+                   </div>
+  
+                   <div class="carrito-ventana-contenido2">
+                     <div>Su carrito está actualmente vacío</div>
+                   </div>
+                </div>
+              </div>
+              <!--FIN-->
+
+              <div class="menu-lateral-fondo-oscuroRR" id="menu-lateral-fondo-oscuroRR">
+                <div class="menu-lateral-fondo-oscuro-colorRR" id="menu-lateral-fondo-oscuro-colorRR"></div>
+                <div class="menu-lateralRR" id="menu-lateralRR">
+                  <div class="contenido-principalRR MenucategoriasresponsiveRR">
+                    <div class="header-side-PRINCIPALRR">Menú <i class="bi bi-x-lg" id="CERRAR1RR"></i></div>
+                    <div href="" class="item-submenu-PRINCIPALRR"><p onclick="location.href='index.html';">Inicio</p></i></div>
+                    <div href="" class="item-submenu-PRINCIPALRR  aa"><p class="dd" data-categoria="Perro"> Perro <i class="bi bi-chevron-right"></i></p></div>
+                    <div href="" class="item-submenu-PRINCIPALRR  aa"><p class="dd" data-categoria="Gato">Gato<i class="bi bi-chevron-right"></i></p></div>
+                    <div href="" class="item-submenu-PRINCIPALRR"><p>Marcas</i></p></div>
+                    <div href="" class="item-submenu-PRINCIPALRR"><p>Blog</i></p></div>
+                    <div href="" class="item-submenu-PRINCIPALRR"><p onclick="location.href='nosotros.html';">Nosotros</i></p></div>
+                    <div href="" class="item-submenu-PRINCIPALRR"><p onclick="location.href='login.html'";>Cuenta</i></p></div>
+                    <div href="" class="item-submenu-PRINCIPALRR"><p onclick="location.href='preguntas.html'";>Soporte</i></p></div>
+                  </div>
+                  <div class="MenuSubcategoriasResponsiveRR" id="MenuSubcategoriasResponsiveRR">
+                    <div class="categoriaRR Perro activo" id="MenuPerroRR" data-categoria="Perro">
+                      <div class="header-sideRR">
+                          <i class="bi bi-arrow-left " id="atras-perroRR"></i>
+                          <div class="fs-3">Perro</div>
+                      </div>
+                      
+                      <div class="items-submenuRR" id="items-submenuRR">
+                          <div class="item-submenuRR" data-categoria="Perro-comida">Alimento
+                              <i class="bi bi-chevron-right"></i>
+                          </div>
+                          <div class="item-submenuRR" data-categoria="Perro-transporte">Transporte, paseo y viaje
+                              <i class="bi bi-chevron-right"></i>
+                          </div>
+                          <div class="item-submenuRR" data-categoria="Perro-articulos">Artículos para el hogar
+                              <i class="bi bi-chevron-right"></i>
+                          </div>
+                          <div class="item-submenuRR" data-categoria="Perro-higiene">Higiene y Limpieza
+                              <i class="bi bi-chevron-right"></i>
+                          </div>
+                          <div class="item-submenuRR" data-categoria="Perro-tecnología">Tecnología
+                              <i class="bi bi-chevron-right"></i>
+                          </div>
+                          <div class="item-submenuSNRR">Lactantes
+                          </div>
+                          <div class="item-submenuRR" data-categoria="Perro-Salud">Salud
+                              <i class="bi bi-chevron-right"></i>
+                          </div>
+                         
+                      
+                      </div> 
+
+                      <div class="MenuSubcategoriasResponsive2RR" id="MenuSubcategoriasResponsive2RR">
+                        <div class="categoria2RR activo" data-categoria="Perro-comida">
+                            <div class="header-side2RR">
+                                <i class="bi bi-arrow-left " id="atras-perroRR"></i>
+                                <div class="fs-3">Alimentación</div>
+                            </div>
+                            
+                            <div class="items-submenu2RR" id="items-submenu">
+                                <div class="item-submenu2RR" onclick="location.href='PerroAlimentoSeco.html';">Alimento Seco
+                                </div>
+                                <div class="item-submenu2RR" onclick="location.href='PerroAlimentoHumedo.html';">Alimento Húmedo
+                                </div>
+                                <div class="item-submenu2RR" onclick="location.href='PerroAlimentoSaludable.html';">Alimento Saludable
+                                </div>
+                                <div class="item-submenu2RR" onclick="location.href='PerroAlimentoSnacks.html';">Snacks
+                                </div>
+                    
+                                
+                            
+                            </div> 
+    
+                        </div>
+                        
+                        <div class="categoria2RR" data-categoria="Perro-transporte">
+                          <div class="header-side2RR">
+                              <i class="bi bi-arrow-left " id="atras-perroRR"></i>
+                              <div class="fs-3">Transporte, paseo y viaje</div>
+                          </div>
+                          
+                          <div class="items-submenu2RR" id="items-submenuRR">
+                              <div class="item-submenu2RR" onclick="location.href='PerroTransportadores.html';">Transportadores
+                              </div>
+                              <div class="item-submenu2RR" onclick="location.href='PerroBolsos.html';">Bolsos paseadores
+                              </div>
+                              <div class="item-submenu2RR" onclick="location.href='PerroArneses.html';">Arneses y correas
+                              </div>
+                              <div class="item-submenu2RR" onclick="location.href='PerroCorreas.html';">Correas
+                              </div>
+                  
+                              
+                          
+                          </div> 
+  
+                        </div>
+                       
+                        <div class="categoria2RR" data-categoria="Perro-articulos">
+                          <div class="header-side2RR">
+                              <i class="bi bi-arrow-left " id="atras-perroRR"></i>
+                              <div class="fs-3">Artículos para el hogar</div>
+                          </div>
+                          
+                          <div class="items-submenu2RR" id="items-submenuRR">
+                              <div class="item-submenu2RR" onclick="location.href='PerroHogarCamas.html';">Camas
+                              </div>
+                              <div class="item-submenu2RR" onclick="location.href='PerroHogarJuguetes.html';">Juguetes
+                              </div>
+                              <div class="item-submenu2RR" onclick="location.href='PerroHogarPlatos.html';">Platos y bebederos
+                              </div>
+                              <div class="item-submenu2RR" onclick="location.href='PerroHogarCasas.html';">Casas
+                              </div>
+                              
+                          
+                          </div> 
+  
+                        </div>
+                        
+                        <div class="categoria2RR" data-categoria="Perro-higiene">
+                          <div class="header-side2RR">
+                              <i class="bi bi-arrow-left " id="atras-perroRR"></i>
+                              <div class="fs-3">Higiene y limpieza</div>
+                          </div>
+                          
+                          <div class="items-submenu2RR" id="items-submenuRR">
+                              <div class="item-submenu2RR" onclick="location.href='PerroHigieneBaño.html';">Articulos de baño perro
+                              </div>
+                              <div class="item-submenu2RR" onclick="location.href='PerroHigieneHogar.html';">Articulos para el hogar
+                              </div>
+                              <div class="item-submenu2RR" onclick="location.href='PerroHigienePerfumes.html';">Perfumes
+                              </div>
+                              <div class="item-submenu2RR" onclick="location.href='PerroHigieneLimpieza.html';">Limpieza dental
+                              </div>
+                          </div> 
+  
+                        </div>
+
+                        <div class="categoria2RR" data-categoria="Perro-tecnología">
+                          <div class="header-side2RR">
+                              <i class="bi bi-arrow-left " id="atras-perroRR"></i>
+                              <div class="fs-3">Tecnología</div>
+                          </div>
+                          
+                          <div class="items-submenu2RR" id="items-submenu">
+                              <div class="item-submenu2RR">Collares
+                              </div>
+                              <div class="item-submenu2RR">Dispensador de comida
+                              </div>
+                              <div class="item-submenu2RR">Vigilancia
+                              </div>
+                              <div class="item-submenu2RR">Limpieza
+                              </div>
+                              
+                          
+                          </div> 
+  
+                        </div>
+
+                        <div class="categoria2RR" data-categoria="Perro-Salud">
+                          <div class="header-side2RR">
+                              <i class="bi bi-arrow-left " id="atras-perroRR"></i>
+                              <div class="fs-3">Salud</div>
+                          </div>
+                          
+                          <div class="items-submenu2RR" id="items-submenuRR">
+                              <div class="item-submenu2RR" onclick="location.href='PerroSaludAntiparasitarios.html';">Antiparasitarios
+                              </div>
+                              <div class="item-submenu2RR" onclick="location.href='PerroSaludDermatologicos.html';">Dermatológicos
+                              </div>
+                              <div class="item-submenu2RR" onclick="location.href='PerroSaludConos.html';">Conos y fajas
+                              </div>
+                              <div class="item-submenu2RR" onclick="location.href='PerroSaludAnalgesicos.html';">Analgésicos
+                              </div>
+                              <div class="item-submenu2RR" onclick="location.href='PerroSaludVyS.html';">Vitaminas y Suplementos
+                              </div>
+                          </div> 
+  
+                        </div>
+
+                      </div>
+                      
+                    </div>
+                    
+                    <div class="categoriaRR Gato" id="MenuGatoRR" data-categoria="Gato">
+                      <div class="header-sideRR">
+                        <i class="bi bi-arrow-left " id="atras-perroRR"></i>
+                        <div class="fs-3">Gato</div>
+                      </div>
+                      <div class="items-submenuRR" id="items-submenuRR">
+                        <div class="item-submenuGatoRR" data-categoria="Gato-comida">Alimento
+                            <i class="bi bi-chevron-right"></i>
+                        </div>
+                        <div class="item-submenuGatoRR" data-categoria="Gato-transporte">Transporte, paseo y viaje
+                          <i class="bi bi-chevron-right"></i>
+                        </div>
+                        <div class="item-submenuGatoRR" data-categoria="Gato-articulos">Artículos para el hogar
+                          <i class="bi bi-chevron-right"></i>
+                        </div>
+                        <div class="item-submenuGatoRR" data-categoria="Gato-higiene">Higiene y Limpieza
+                          <i class="bi bi-chevron-right"></i>
+                        </div>
+                        <div class="item-submenuGatoRR" data-categoria="Gato-tecnología">Tecnología
+                          <i class="bi bi-chevron-right"></i>
+                        </div>
+                        <div class="item-submenuSNRR">Lactantes
+                        </div>
+                        <div class="item-submenuGatoRR" data-categoria="Gato-Salud">Salud
+                          <i class="bi bi-chevron-right"></i>
+                        </div>
+                    
+                      </div>
+                      <div class="MenuSubcategoriasResponsive2GatoRR" id="MenuSubcategoriasResponsive2GatoRR">
+                        <div class="categoria2GatoRR activo" data-categoria="Gato-comida">
+                            <div class="header-side2RR">
+                                <i class="bi bi-arrow-left " id="atras-perroRR"></i>
+                                <div class="fs-3">Alimentación</div>
+                            </div>
+                            
+                            <div class="items-submenu2RR" id="items-submenuRR">
+                              <div class="item-submenu2RR" onclick="location.href='GatoAlimentoSeco.html';">Alimento Seco
+                              </div>
+                              <div class="item-submenu2RR" onclick="location.href='GatoAlimentoHumedo.html';">Alimento Húmedo
+                              </div>
+                              <div class="item-submenu2RR" onclick="location.href='GatoAlimentoSaludable.html';">Alimento Saludable
+                              </div>
+                              <div class="item-submenu2RR" onclick="location.href='GatoAlimentoSnacks.html';">Snacks
+                              </div>   
+                            
+                            </div> 
+    
+                        </div>
+                        <div class="categoria2GatoRR" data-categoria="Gato-transporte">
+                          <div class="header-side2RR">
+                              <i class="bi bi-arrow-left " id="atras-perroRR"></i>
+                              <div class="fs-3">Transporte, paseo y viaje</div>
+                          </div>
+                          
+                          <div class="items-submenu2RR" id="items-submenuRR">
+                            <div class="item-submenu2RR" onclick="location.href='GatoTransportadores.html';">Transportadores
+                            </div>
+                            <div class="item-submenu2RR" onclick="location.href='GatoBolsos.html';">Bolsos paseadores
+                            </div>
+                            <div class="item-submenu2RR" onclick="location.href='GatoArneses.html';">Arneses y correas
+                            </div>
+                            <div class="item-submenu2RR" onclick="location.href='GatoCorreas.html';">Correas
+                            </div>
+                          </div> 
+  
+                        </div>
+                        <div class="categoria2GatoRR" data-categoria="Gato-articulos">
+                          <div class="header-side2RR">
+                              <i class="bi bi-arrow-left " id="atras-perroRR"></i>
+                              <div class="fs-3">Artículos para el hogar</div>
+                          </div>
+                          
+                          <div class="items-submenu2RR" id="items-submenuRR">
+                              <div class="item-submenu2RR" onclick="location.href='GatoHogarCamas.html';">Camas
+                              </div>
+                              <div class="item-submenu2RR" onclick="location.href='GatoHogarJuguetes.html';">Juguetes
+                              </div>
+                              <div class="item-submenu2RR" onclick="location.href='GatoHogarPlatos.html';">Platos y bebederos
+                              </div>
+                              <div class="item-submenu2RR" onclick="location.href='GatoHogarRascadores.html';">Rascadores
+                              </div>
+                              <div class="item-submenu2RR" onclick="location.href='GatoHogarVestimenta.html';">Vestimenta
+                              </div>
+                          
+                          </div> 
+  
+                        </div>
+  
+                        <div class="categoria2GatoRR" data-categoria="Gato-higiene">
+                          <div class="header-side2RR">
+                              <i class="bi bi-arrow-left " id="atras-perroRR"></i>
+                              <div class="fs-3">Higiene y limpieza</div>
+                          </div>
+                          
+                          <div class="items-submenu2RR" id="items-submenuRR">
+                              <div class="item-submenu2RR" onclick="location.href='GatoHigieneArena.html';">Arena
+                              </div>
+                              <div class="item-submenu2RR" onclick="location.href='GatoHigieneAreneros.html';">Areneros
+                              </div>
+                              <div class="item-submenu2RR" onclick="location.href='GatoHigieneBaño.html';">Artículos de baño para gatos
+                              </div>
+                              <div class="item-submenu2RR" onclick="location.href='GatoHigieneHogar.html';">Artículos para el hogar
+                              </div>
+                              <div class="item-submenu2RR" onclick="location.href='GatoHigienePeines.html';">Peines
+                              </div>
+                          </div> 
+  
+                        </div>
+  
+                        <div class="categoria2GatoRR" data-categoria="Gato-tecnología">
+                          <div class="header-side2RR">
+                              <i class="bi bi-arrow-left " id="atras-perroRR"></i>
+                              <div class="fs-3">Tecnología</div>
+                          </div>
+                          
+                          <div class="items-submenu2RR" id="items-submenuRR">
+                              <div class="item-submenu2RR">Collares
+                              </div>
+                              <div class="item-submenu2RR">Dispensador de comida
+                              </div>
+                              <div class="item-submenu2RR">Vigilancia
+                              </div>
+                              <div class="item-submenu2RR">Limpieza
+                              </div>
+                              
+                          
+                          </div> 
+  
+                        </div>
+  
+                        <div class="categoria2GatoRR" data-categoria="Gato-Salud">
+                          <div class="header-side2RR">
+                              <i class="bi bi-arrow-left " id="atras-perroRR"></i>
+                              <div class="fs-3">Salud</div>
+                          </div>
+                          
+                          <div class="items-submenu2RR" id="items-submenuRR">
+                            <div class="item-submenu2RR" onclick="location.href='GatoSaludAntiparasitarios.html';">Antiparasitarios
+                            </div>
+                            <div class="item-submenu2RR" onclick="location.href='GatoSaludDermatologicos.html';">Dermatológicos
+                            </div>
+                            <div class="item-submenu2RR" onclick="location.href='GatoSaludConos.html';">Conos y fajas
+                            </div>
+                            <div class="item-submenu2RR" onclick="location.href='GatoSaludAnalgesicos.html';">Analgésicos
+                            </div>
+                            <div class="item-submenu2RR" onclick="location.href='GatoSaludVyS.html';">Vitaminas y Suplementos
+                            </div>
+                          </div> 
+  
+                        </div>
+  
+                      </div>
+                    </div>
+
+                  </div>
+                </div>   
+              </div>
+              
+          </div>      
+      </div>
+
+    </nav>
+    <!--FIN-->
+
+    <div class="fff">
+      <div class="container2">
+        <div class="titulo">
+          Términos y Condiciones
+        </div>
+        <p>El acceso y uso del sitio web, se rige por los siguientes Términos y Condiciones, sin perjuicio de otras condiciones e instrucciones específicas que se comuniquen oportunamente a los usuarios. En consecuencia, se aplicarán y se entenderá que forman parte de todos los actos y contratos que se ejecuten o celebren entre los usuarios del sitio web, en adelante “los usuarios”, y MASCOTAS PERUANAS S.A.C, en adelante “la empresa”; por lo tanto los usuarios aceptan y reconocen dichos términos y condiciones al realizar cualquier transacción en el sitio web o a través del número telefónico, aplicación móvil o WhatsApp que la empresa indique en su página web oficial o redes sociales oficiales. </p>
+        <p>La empresa se reserva el derecho de actualizar y/o modificar los Términos y Condiciones descritos a continuación cuando lo estime conveniente, motivo por el cual cada vez que el usuario utilice el presente sitio, deberá consultar dichos documentos. Sin perjuicio de lo anterior, la empresa se compromete a realizar los mejores esfuerzos para asegurar la disponibilidad, sin interrupciones, de los servicios del sitio web, y disminuir los errores en cualquier transmisión de información que pudiera tener lugar. No obstante, y debido a la naturaleza misma del internet no es posible garantizar tales extremos, por lo tanto el acceso a los servicios del sitio web podría eventualmente verse suspendido o restringido a efectos de la realización de trabajos de mantenimiento, modernización de nuestros productos o servicios, reparación de dificultades técnicas, fallas de internet o por cualquier otra circunstancia ajena a la empresa; en tales casos se procurará tomar las acciones pertinentes para solucionar los inconvenientes en el menor tiempo posible, sin que por ello pueda imputársele algún tipo de responsabilidad a la empresa.</p>
+        <p>Los términos contenidos en este instrumento formarán parte de todos los actos y contratos que se ejecuten o celebren mediante los sistemas de oferta y comercialización comprendidos en el sitio, entre los usuarios y la empresa.</p>
+        <p>La aceptación de los presentes Términos y Condiciones es imprescindible para el registro del usuario y uso del sitio, quien declarará haber leído y aceptado lo estipulado en el presente documento.</p>
+        <p>A continuación, detallamos los Términos y Condiciones que regulan la relación entre la empresa y los usuarios:</p>
+      
+        <div class="titulo">REGISTRO DEL USUARIO</div>
+        <p>El usuario declara y garantiza que ha cumplido los 18 años y cuenta con absoluta capacidad legal para utilizar el sitio web respetando los términos y condiciones aquí descritos. Dicho esto, para acceder a los servicios del sitio web no es necesario estar registrado. El registro de cada usuario es opcional y se realizará completando el formulario que aparece en el sitio web, así como aceptando los términos y condiciones y su posterior envío. En ese sentido, los datos necesarios para el registro son los siguientes: nombre, apellidos, correo electrónico y clave. En caso de no registrarse, el usuario deberá completar los datos que se indican en el formulario de compra con el fin de hacer efectiva la adquisición de productos o servicios como invitado del sitio. El sitio web utilizará los datos de los usuarios invitados, es decir, los usuarios no registrados, única y exclusivamente para los fines indicados por los mismos, sin realizar otro tipo de tratamiento de sus datos personales. </p>
+        <p>Los usuarios que se registren no tendrán que ingresar sus datos por cada compra posterior que realicen. El sitio web utilizará los datos de los usuarios invitados, es decir, los usuarios no registrados, única y exclusivamente para los fines indicados por los mismos, sin realizar otro tipo de tratamiento de sus datos personales. </p>
+        <div class="titulo">CLAVE SECRETA</div>
+        <p>Los usuarios dispondrán, una vez registrados, de una contraseña o clave definitiva que le permitirá el acceso personalizado, confidencial y seguro. Dicha clave podrá ser cambiada cuando el usuario lo estime conveniente, para lo cual deberá sujetarse al procedimiento establecido en el sitio web. Sin perjuicio de ello, es única y exclusivamente responsabilidad de los usuarios velar por el mantenimiento de la confidencialidad de su clave secreta registrada en el sitio web, la cual le permite efectuar compras, solicitar servicios y obtener información. Por lo cual, el uso indebido de la clave o su entrega a terceros no involucra responsabilidad alguna para la empresa. </p>
+        <div class="titulo">PROPIEDAD INTELECTUAL</div>
+        <p>El contenido, organización, gráficas, diseño, compilación y otros aspectos del sitio web se encuentran protegidos por leyes de Propiedad Intelectual de la República del Perú. Su copia, redistribución, uso o publicación, total o parcial, está prohibida y penada por ley. La publicación o transmisión de información o documentos en el sitio web, no implica una renuncia de cualquier derecho relacionado con tales documentos o información. La empresa hace expresa reserva del ejercicio de todas las acciones, tanto administrativas, civiles y penales, destinadas a la protección y resguardo de sus derechos de propiedad intelectual e industrial</p>
+        <div class="titulo">DERECHOS DEL USUARIO</div>
+        <p>La empresa reconoce todos los derechos del usuario contenidos en la legislación sobre protección al consumidor vigente en el territorio de la República del Perú, y los estipulados en el presente documento. La sola visita al sitio web no implica obligación alguna, a menos que el usuario haya aceptado en forma inequívoca las condiciones ofrecidas por la empresa, en la forma indicada en estos términos y condiciones.</p>
+        <div class="titulo">MEDIOS DE PAGOS QUE SE PODRÁN UTILIZAR EN ESTE SITIO</div>
+        <p>Los productos y servicios adquiridos en el sitio web, a excepción de ciertos casos u ofertas de determinados bienes o servicios que serán previamente informados al usuario, podrán ser cancelados utilizando los siguientes medios de pago permitidos en este sitio:</p>
+        <p>Pagos en línea: Aceptamos pagos con tarjetas de débito, crédito y billeteras electrónicas como Yape. Este proceso tiene un tiempo de espera hasta más de dos horas. Una vez confirmado, la empresa procederá a ponerse en contacto con el usuario.</p>
+        <p>Adicionalmente y por cuestiones de seguridad, la empresa se reserva el derecho de rechazar transacciones pagadas con tarjeta aunque éstas hayan sido procesadas (en este caso se procederá con la correspondiente anulación y posterior reembolso por parte de la entidad bancaria), como así también solicitar información adicional que acredite la identificación del titular de la misma.</p>
+      </div>
+    
+    
+    </div>
+
+
+   
+    
+
+  
+
+    <style>
+      html{
+        font-family: sans-serif;
+      }
+      .center{
+        text-align: center;
+      }
+      .container2{
+        padding: 30px;
+      width: 90%;
+      max-width: 900px;
+    }
+
+    .fff{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .titulo{
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+    .negrita{
+    font-weight: bold;
+  }
+    </style>
+
+    <!--footer-->
+    <div class="footer1">
+      <div class="grid-padre">
+
+        <div class="caja uno fs-1">
+          ALTERPET
+        </div>
+        <div class="caja dos">
+          <p class="grid-contenido "><a class="ida" href="index.html">Inicio</a></p>
+          <p class="grid-contenido"><a class="ida" href="">Blog</a></p>
+          <p class="grid-contenido"><a class="ida" href="nosotros.html">Nosotros</a></p>
+          <p class="grid-contenido"><a class="ida" href="mapa.html">Mapa de sitio</a></p>
+        </div>
+        <div class="caja tres">
+          <p class="grid-titulo fs-5">Atención al cliente</p>
+          <p class="grid-contenido"><a class="ida" href="preguntas.html">Preguntas frecuentes</a></p>
+          <p class="grid-contenido"><a class="ida" href="zdevolucion.html">Devoluciones</a></p>
+          <p class="grid-contenido"><a class="ida" href="Contacto.html">Contácte con nosotros</a></p>
+          <p class="grid-contenido"><a class="ida" href="zenvio.html">Información de envíos</a></p>
+        </div>
+        <div class="caja cuatro">
+          <p class="grid-titulo fs-5">Política</p>
+          <p class="grid-contenido"><a class="ida" href="terminos.html">Términos y condiciones</a></p>
+          <p class="grid-contenido"><a class="ida" href="politicaprivacidad.html">Seguridad y privacidad</a></p>
+        </div>
+         
+      </div>
+
+      <!--ACORDEON PARA ESPECIFICACIONES-->
+
+      <div class="accordion">
+          <div class="accordion-item-2">
+              <div class="accordion-item-header">
+              ALTERPET
+              </div>
+              <div class="accordion-item-body d-flex flex-column">
+                  <a href="index.html">Inicio</a>
+                  <a href="">Blog</a>
+                  <a href="nosotros.html">Nosotros</a>
+                  <a href="mapa.html">Mapa de sitio</a>
+               
+              </div>
+          </div>
+          <div class="accordion-item-2">
+              <div class="accordion-item-header">
+                Atención al cliente
+              </div>
+              <div class="accordion-item-body d-flex flex-column">
+                  <a href="preguntas.html">Preguntas frecuentes</a>
+                  <a href="zdevolucion.html">Devoluciones</a>
+                  <a href="Contacto.html">Contácte con nosotros</a>
+                  <a href="zenvio.html">Información de envíos</a>
+              </div>
+          </div>
+          <div class="accordion-item-2">
+              <div class="accordion-item-header">
+                Política
+              </div>
+              <div class="accordion-item-body d-flex flex-column">
+                  <a href="terminos.html">Términos y condiciones</a>
+                  <a href="politicaprivacidad.html">Seguridad y privacidad</a>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!--fin-->
+
+    <!--BOOstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    <!--INDEX JS PARA HOME-->
+    <script src="js/nosotros.js"></script> <!--carrusel slider///carrusel de marcas///menu pegajoso////-->
+    <script src="js/acordeon.js"></script>
+</body>
+</html>

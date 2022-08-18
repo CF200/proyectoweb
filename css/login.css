@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial;
+}
+
+/*html{
+    background: url(https://los40es00.epimg.net/los40/imagenes/2022/01/05/actualidad/1641378487_419887_1641378601_gigante_normal.jpg);
+    /*background: url(https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/V5RZA43Z7FEQVM6ASB46MPVXTI.jpg);
+    /*background: url(https://images.unsplash.com/photo-1600198767219-224d6373b043?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHBlcnJvJTIwZW4lMjBsYSUyMG5hdHVyYWxlemF8ZW58MHx8MHx8&w=1000&q=80);
+    /*background: url(https://mobimg.b-cdn.net/v3/fetch/32/32f2fcfeea73f831285bdf78bb294997.jpeg);*/
+    /*background-position: center;
+    background-repeat: no-repeat;
+    
+}*/
+
+
+.TT{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px;
+}
+
+.TT a{
+    color: cornflowerblue;
+    font-family: 'Lilita One', cursive;
+}
+
+
+.login{
+    width: 400px;
+    min-width: 300px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 100px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, .3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+}
+
+.login-titulo{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.controles{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid rgba(0, 0, 0, .1);
+    outline: none;
+    /*border-bottom: 1px solid rgb(61, 204, 223);*/
+}
+
+/*botón*/
+.iniciar{
+    background: black;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.iniciar:hover{
+    cursor: pointer;
+    background: rgb(43, 42, 42);
+}
+
+.olvidado{
+    text-align: center;
+    font-size: 15px;
+    color: rgba(0, 0, 0, .6);
+}
+
+.olvidado:hover{
+    text-decoration: underline;
+}
+
+.registrarse1{
+    text-align: center;
+}
+
+.registrarse2{
+    color: black;
+    font-weight: 600;
+}
+
+.registrarse2:hover{
+    text-decoration: underline;
+}
